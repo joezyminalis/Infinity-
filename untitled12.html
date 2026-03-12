@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Infinity Vibes Events & Entertainment</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#0e0e0e;
+color:white;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+background:black;
+position:sticky;
+top:0;
+}
+
+nav h2{
+color:#ff2fb3;
+}
+
+nav a{
+margin-left:20px;
+color:white;
+font-weight:500;
+text-decoration:none;
+}
+
+.hero{
+height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(135deg,#5a00ff,#ff2fb3,#00ffb3);
+}
+
+.hero h1{
+font-size:3.5rem;
+}
+
+.hero p{
+font-size:1.3rem;
+margin:15px 0;
+}
+
+.btn{
+padding:14px 28px;
+border-radius:30px;
+background:black;
+color:white;
+font-weight:600;
+margin:10px;
+display:inline-block;
+}
+
+section{
+padding:80px 10%;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:50px;
+font-size:2.2rem;
+color:#ff2fb3;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:#1a1a1a;
+padding:25px;
+border-radius:12px;
+text-align:center;
+}
+
+.card h3{
+margin-bottom:10px;
+color:#00ffb3;
+}
+
+.portfolio{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.portfolio div{
+height:200px;
+background:#222;
+border-radius:10px;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.team{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+text-align:center;
+}
+
+.booking-form{
+max-width:700px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+background:#1a1a1a;
+padding:30px;
+border-radius:10px;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea{
+padding:12px;
+border-radius:8px;
+border:none;
+font-family:inherit;
+}
+
+.booking-form button{
+padding:15px;
+background:#ff2fb3;
+border:none;
+color:white;
+font-weight:600;
+border-radius:30px;
+cursor:pointer;
+}
+
+.booking-form button:hover{
+background:#00ffb3;
+color:black;
+}
+
+footer{
+background:black;
+padding:30px;
+text-align:center;
+margin-top:40px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+<h2>Infinity Vibes</h2>
+
+<div>
+<a href="#services">Services</a>
+<a href="#portfolio">Portfolio</a>
+<a href="#team">Team</a>
+<a href="#booking">Book Event</a>
+</div>
+</nav>
+
+<div class="hero">
+
+<h1>INFINITY VIBES</h1>
+
+<p>Creating Unforgettable Moments</p>
+
+<a class="btn" href="#booking">Book Your Event</a>
+
+</div>
+
+<section id="services">
+
+<h2 class="section-title">Our Services</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>Event Planning</h3>
+<p>Corporate events, weddings, birthdays and festivals.</p>
+</div>
+
+<div class="card">
+<h3>DJ & Entertainment</h3>
+<p>Professional DJs, MCs and live performers.</p>
+</div>
+
+<div class="card">
+<h3>Equipment Hire</h3>
+<p>Sound systems, lighting, staging and event furniture.</p>
+</div>
+
+<div class="card">
+<h3>Media Production</h3>
+<p>Photography, videography and promotional content.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="portfolio">
+
+<h2 class="section-title">Event Portfolio</h2>
+
+<div class="portfolio">
+
+<div>Event Setup</div>
+<div>Concert Lighting</div>
+<div>Wedding Event</div>
+
+</div>
+
+</section>
+
+<section id="team">
+
+<h2 class="section-title">Our Team</h2>
+
+<div class="team">
+
+<div>
+<h3>Queen 👑</h3>
+<p>Marketing & Communications</p>
+</div>
+
+<div>
+<h3>Joe</h3>
+<p>Entertainment Director</p>
+</div>
+
+<div>
+<h3>Dan</h3>
+<p>Logistics Manager</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="booking">
+
+<h2 class="section-title">Book Your Event</h2>
+
+<form class="booking-form">
+
+<input type="text" id="name" placeholder="Full Name" required>
+
+<input type="tel" id="phone" placeholder="Phone / WhatsApp Number" required>
+
+<input type="email" id="email" placeholder="Email Address" required>
+
+<select id="eventType" required>
+<option value="">Select Event Type</option>
+<option>Wedding</option>
+<option>Birthday</option>
+<option>Corporate Event</option>
+<option>Club Event</option>
+<option>Concert / Festival</option>
+<option>Other</option>
+</select>
+
+<input type="date" id="date" required>
+
+<input type="text" id="location" placeholder="Event Location">
+
+<input type="number" id="guests" placeholder="Estimated Guests">
+
+<select id="package">
+<option>Bronze Package</option>
+<option>Silver Package</option>
+<option>Gold Package</option>
+<option>Custom Package</option>
+</select>
+
+<textarea id="message" rows="5" placeholder="Describe your event"></textarea>
+
+<button type="button" onclick="sendBooking()">Submit Booking</button>
+
+</form>
+
+</section>
+
+<footer>
+
+<p>Phone / WhatsApp: 0746723148 | 0797433222</p>
+
+<p>© 2026 Infinity Vibes Events & Entertainment</p>
+
+</footer>
+
+<script>
+
+function sendBooking(){
+
+let name=document.getElementById("name").value;
+let phone=document.getElementById("phone").value;
+let event=document.getElementById("eventType").value;
+let date=document.getElementById("date").value;
+let location=document.getElementById("location").value;
+let guests=document.getElementById("guests").value;
+let pack=document.getElementById("package").value;
+let message=document.getElementById("message").value;
+
+let text = "NEW EVENT BOOKING%0A%0A"+
+"Name: "+name+"%0A"+
+"Phone: "+phone+"%0A"+
+"Event Type: "+event+"%0A"+
+"Date: "+date+"%0A"+
+"Location: "+location+"%0A"+
+"Guests: "+guests+"%0A"+
+"Package: "+pack+"%0A"+
+"Details: "+message;
+
+window.open("https://wa.me/254746723148?text="+text);
+
+}
+
+</script>
+
+</body>
+</html>
